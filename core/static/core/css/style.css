@@ -393,17 +393,17 @@ html,body{
 	 border: 1px solid #fff;
 }
 .single-slide-item.slide-1 {
-	background-image:url(../../assets/images/banner/banner1.jpg);
+	background-image:url(../images/banner/banner1.jpg);
 	position:relative;
 	z-index:1;
 }
 .single-slide-item.slide-2 {
-	background-image:url(../../assets/images/banner/banner2.jpg);
+	background-image:url(../images/banner/banner2.jpg);
 	position:relative;
 	z-index:1;
 }
 .single-slide-item.slide-3 {
-	background-image:url(../../assets/images/banner/banner3.jpg);
+	background-image:url(../images/banner/banner3.jpg);
 	position:relative;
 	z-index:1;
 }
@@ -711,7 +711,7 @@ a:focus.service-btn{
 }
 
 /*-------------------------------------
-		7. Statistics
+		6. Main Form
 --------------------------------------*/
 .main-form {
     padding: 72px 0 72px;
@@ -724,6 +724,11 @@ a:focus.service-btn{
 	font-family: 'Poppins', sans-serif;
 	line-height: 1.5;
 }
+.main-form h4{
+	font-size: 22px;
+	text-align: right;
+	text-transform: none;
+}
 .main-form p {
 	color: #fff;
     font-size: 16px;
@@ -731,12 +736,80 @@ a:focus.service-btn{
     line-height: 1.8;
 }
 
+/*--contct button--*/
+.contact-form .single-estimate-btn button{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	background: #7370d8;
+	height:50px;
+	width: 100%;
+	padding: auto;
+	border:1px solid #fff !important;
+	text-transform:uppercase;
+	font-family: 'Poppins', sans-serif;
+	margin-top: 3px;
+	-webkit-transition: .5s; 
+	-moz-transition:.5s; 
+	-ms-transition:.5s; 
+	-o-transition:.5s;
+    transition: .5s;
+}
+.contact-form .single-estimate-btn button.contact-btn ,
+.contact-form .single-estimate-btn button.contact-btn:focus {
+    margin-top:0px;
+    outline: 0 !important;
+    border:0;
+    color: #fff;
+    letter-spacing: 2.5px;
+    border-radius: 0px;
+    font-size:14px;
+	-webkit-transition: .5s; 
+	-moz-transition:.5s; 
+	-ms-transition:.5s; 
+	-o-transition:.5s;
+    transition: .5s;
+	
+}
+
+.single-estimate-btn:hover button.contact-btn {
+	color:#7370d8;
+	background:#fff;
+	border:1px solid #7370d8;
+}
+/*--contct button--*/
+.main-form form {
+	margin-top: 30px;
+}
+
+.main-form .estimate {
+	margin-top: 40px;
+	padding: 30px;
+	border: 2px solid #fff;
+	border-radius: 25px;
+}
+
+.main-form .estimate .disclaimer {
+	font-size: 12px;
+	letter-spacing: 1px;
+}
+
+.main-form .estimate .estimate-values {
+	margin: 20px 0;
+	letter-spacing: 1px;
+}
+
+.main-form .estimate .savings {
+	font-size: 16px;
+	letter-spacing: 2px;
+}
+
 /*-------------------------------------
 		7. Statistics
 --------------------------------------*/
 .statistics{
 	position:relative;
-	background:url(../../assets/images/counter/counter-banner.jpg)no-repeat;
+	background:url(../images/counter/counter-banner.jpg)no-repeat;
 	background-position:center;
 	background-size:cover;
 	padding: 98px 0 81px;
@@ -880,7 +953,7 @@ a:focus.service-btn{
 --------------------------------------*/
 .contact {
     padding: 115px 0 120px;
-    background:url(../../assets/images/footer/map.jpg)no-repeat;
+    background:url(../images/footer/map.jpg)no-repeat;
 	background-position:center;
 	background-size: cover;
 	position: relative;
@@ -1301,7 +1374,7 @@ a:focus.service-btn{
 
 .about-part{
 	position:relative;
-	background:url(../../assets/images/about/about-banner.jpg)no-repeat;
+	background:url(../images/about/about-banner.jpg)no-repeat;
 	background-position:center;
 	background-size:cover;
 	padding: 124px 0 144px;
