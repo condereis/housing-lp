@@ -48,6 +48,18 @@ font-family: 'Lato', sans-serif;
 	-ms-box-sizing:border-box;
 	box-sizing:border-box;
 }
+:target::before {
+    content: '';
+    display: block;
+    height:      180px;
+    margin-top: -180px;
+}
+.anchor-container {
+	position: relative;
+}
+.section-anchor {
+	position:absolute; top:-150px;
+}
 body{
 	font-size:14px;
 	background: #fff;
@@ -104,6 +116,9 @@ html,body{
 /* .wrapper {
     position: relative;
     z-index: -1;
+} */
+/* .wrapper-sticky {
+	height: 90px !important;
 } */
 
 .header{
@@ -363,9 +378,9 @@ html,body{
     line-height: 1.5;
 	margin-bottom:51px;
 }
-.single-slide-item button.slide-btn,
-.single-slide-item  button:active .slide-btn ,
-.single-slide-item button:focus .slide-btn{
+.single-slide-item a.slide-btn,
+.single-slide-item a:active .slide-btn ,
+.single-slide-item a:focus .slide-btn{
 	display: inline-block;
     background: #f5f5fb;
     padding: 17px 50px;
@@ -387,7 +402,7 @@ html,body{
     transition: .5s;
 }
 
-.single-slide-item  button.slide-btn:hover{
+.single-slide-item a.slide-btn:hover{
 	 background: transparent;
 	 color: #fff;
 	 border: 1px solid #fff;
@@ -713,23 +728,19 @@ a:focus.service-btn{
 /*-------------------------------------
 		6. Main Form
 --------------------------------------*/
-.main-form {
+#main-form-section {
     padding: 72px 0 72px;
     background: #7370d8;
 	color: #fff;
 }
-.main-form h3{
+#main-form-section h3{
 	color: #fff;
 	font-size: 30px;
 	font-family: 'Poppins', sans-serif;
 	line-height: 1.5;
 }
-.main-form h4{
-	font-size: 22px;
-	text-align: right;
-	text-transform: none;
-}
-.main-form p {
+
+#main-form-section p {
 	color: #fff;
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
@@ -778,30 +789,51 @@ a:focus.service-btn{
 	border:1px solid #7370d8;
 }
 /*--contct button--*/
-.main-form form {
+#main-form-section form {
 	margin-top: 30px;
 }
 
-.main-form .estimate {
+#main-form-section #estimate {
 	margin-top: 40px;
 	padding: 30px;
 	border: 2px solid #fff;
 	border-radius: 25px;
 }
 
-.main-form .estimate .disclaimer {
+#main-form-section #estimate .disclaimer {
 	font-size: 12px;
 	letter-spacing: 1px;
 }
 
-.main-form .estimate .estimate-values {
+#main-form-section #estimate .estimate-values {
 	margin: 20px 0;
 	letter-spacing: 1px;
 }
 
-.main-form .estimate .savings {
+#main-form-section #estimate .savings {
 	font-size: 16px;
 	letter-spacing: 2px;
+}
+
+#loading {
+	text-align: center;
+	display: none;
+}
+
+#estimate-error {
+	text-align: center;
+	text-transform: none;
+	display: none
+}
+
+#estimate {
+	display: none;
+}
+
+#estimate h4{
+	font-size: 22px;
+	text-align: right;
+	text-transform: none;
 }
 
 /*-------------------------------------

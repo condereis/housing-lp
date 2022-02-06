@@ -70,103 +70,7 @@
 		<!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
-		
-		<!--header start-->
-		<section class="header">
-			<div class="container">	
-				<div class="header-left">
-					<ul class="pull-left">
-						<li>
-							<a href="#">
-								<i class="fa fa-phone" aria-hidden="true"></i> +992 563 542
-							</a>
-						</li><!--/li-->
-						<li>
-							<a href="#">
-								<i class="fa fa-envelope" aria-hidden="true"></i>info@mail.com
-							</a>
-						</li><!--/li-->
-					</ul><!--/ul-->
-				</div><!--/.header-left -->
-				<div class="header-right pull-right">
-					<ul>
-						<li class="reg">
-							<a href="#" data-toggle="modal" data-target=".bs-example-modal-sm">
-								Register
-							</a>
-								/
-							<a href="#" data-toggle="modal" data-target=".bs-example-modal-lg">
-								Log in
-							</a>
-							
-							<!-- small modal -->
-							<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
-								<div class="modal-dialog modal-sm" role="document">
-									<div class="modal-content">
-										<div class="modal-header">
-											 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-											 	<span aria-hidden="true">
-											 		<i class="fa fa-close"></i>
-											 	</span>
-											 </button> 
-											<h4 class="modal-title" id="mySmallModalLabel">
-												Sign In
-											</h4> 
-											<form class="sm-frm" style="padding:25px">
-												<label>Name :</label>
-												<input type="text" class="form-control" placeholder="Enter Email">
-												<label>Passoward :</label>
-												<input type="text" class="form-control" placeholder="Enter Passoward">
-												<label><input type="checkbox" name="personality"> Remenber Me</label>
-												<button type="button" class="btn btn-default pull-right">Submit</button>
-											</form>
-										</div>
-									</div>
-								</div>
-							</div>
-							
-							<!-- large modal -->
-							<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-								<div class="modal-dialog modal-lg" role="document">
-									<div class="modal-content">
-										<div class="modal-header">
-											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-											 	<span aria-hidden="true">
-											 		<i class="fa fa-close"></i>
-											 	</span>
-											</button>  
-											<h4 class="modal-title" id="myLargeModalLabel">Register</h4> 
-											<form class="lg-frm" style="padding:25px">
-												<label>Name :</label>
-												<input type="text" class="form-control" placeholder="Enter Name">
-												<label>Email :</label>
-												<input type="text" class="form-control" placeholder="Enter Email">
-												<label>Passoward :</label>
-												<input type="text" class="form-control" placeholder="Enter Passoward">
-												<button type="button" class="btn btn-default pull-right">Submit</button>
-											</form>
-										</div>
-									</div>
-								</div>
-							</div>
-						</li><!--/li -->
-						<li>
-							<div class="social-icon">
-								<ul>
-									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-									<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-									<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-								</ul><!--/.ul -->
-							</div><!--/.social-icon -->
-						</li><!--/li -->
-					</ul><!--/ul -->
-				</div><!--/.header-right -->
-			</div><!--/.container -->	
 
-		</section><!--/.header-->	
-		<!--header end-->
-		
 		<!--menu start-->
 		<section id="menu">
 			<div class="container">
@@ -189,26 +93,11 @@
 						<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 							<ul class="nav navbar-nav navbar-right">
-								<li class="active"><a href="index.html">Home</a></li>
-								<li><a href="about.html">About</a></li>
-								<li><a href="service.html">Service</a></li>
-								<li><a href="project.html">Project</a></li>
-								<li><a href="team.html">Team</a></li>
-								<li><a href="blog.html">Blog</a></li>
-								<li><a href="contact.html">Contact</a></li>
-								<li>
-									<a href="#">
-										<span class="lnr lnr-cart"></span>
-									</a>
-								</li>
-								<li class="search">
-									<form action="">
-										<input type="text" name="search" placeholder="Search....">
-										<a href="#">
-											<span class="lnr lnr-magnifier"></span>
-										</a>
-									</form>
-								</li>
+								<li class="active"><a href="#">Home</a></li>
+								<li><a href="#about-anchor">Sobre</a></li>
+								<li><a href="#service-anchor">Serviços</a></li>
+								<li><a href="#form-anchor">Orçar Imóvel</a></li>
+								<li><a href="#contact-anchor">Contato</a></li>
 							</ul><!-- / ul -->
 						</div><!-- /.navbar-collapse -->
 					</nav><!--/nav -->
@@ -240,12 +129,12 @@
 											<p>
 												Tenha uma cota em uma casa de alto padrão e desfrute suas férias sem se preocupar.
 											</p>
-											<button type="button" class="slide-btn">
-											Fazer orçamento
-											</button>
-											<button type="button"  class="slide-btn">
-											Saiba mais
-											</button>
+											<a href="#form-anchor" class="slide-btn">
+												Fazer orçamento
+											</a>
+											<a href="#about-anchor" class="slide-btn">
+												Saiba mais
+											</a>
 										</div><!-- /.single-slide-item-content-->
 									</div><!-- /.col-->
 								</div><!-- /.row-->
@@ -264,12 +153,12 @@
 											<p>
 												Nós cuidamos de tudo para que você só precise se preocupar em como aproveitar.
 											</p>
-											<button type="button" class="slide-btn">
-											Fazer orçamento
-											</button>
-											<button type="button"  class="slide-btn">
-											Saiba mais
-											</button>
+											<a href="#form-anchor" class="slide-btn">
+												Fazer orçamento
+											</a>
+											<a href="#about-anchor" class="slide-btn">
+												Saiba mais
+											</a>
 										</div><!-- /.single-slide-item-content-->
 									
 									</div><!-- /.col-->
@@ -289,12 +178,12 @@
 											<p>
 												Além de fracionar o preço do imóvel em cotas proporcionamos o financiamento ideal para você
 											</p>
-											<button type="button" class="slide-btn">
-											Fazer orçamento
-											</button>
-											<button type="button"  class="slide-btn">
-											Saiba mais
-											</button>
+											<a href="#form-anchor" class="slide-btn">
+												Fazer orçamento
+											</a>
+											<a href="#about-anchor" class="slide-btn">
+												Saiba mais
+											</a>
 										</div><!-- /.single-slide-item-content-->
 									
 									</div><!-- /.col-->
@@ -317,7 +206,8 @@
 		<!-- header-slider-area end -->
 		
 		<!--we-do start -->
-		<section  class="we-do">
+		<section class="we-do">
+			<div class="anchor-container"><span id="about-anchor" class="section-anchor"></span></div>
 			<div class="container">
 				<div class="we-do-details">
 					<div class="section-header text-center">
@@ -492,167 +382,173 @@
 		
 		<!--service start-->
 		<section  class="service">
-				<div class="container">
-					<div class="service-details">
-						<div class="section-header text-center">
-							<h2>Nossos Serviços</h2>
-							<p>
-								Descubra como podemos te ajudar a ter sua casa dos sonhos
-							</p>
-						</div><!--/.section-header-->
-						<div class="service-content-one">
-							<div class="row">
-								<div class="col-sm-4 col-xs-12">
-									<div class="service-single text-center">
-										<div class="service-img">
-											<img src="{% static 'core/images/service/service1.png' %}" alt="image of service" />
-										</div><!--/.service-img-->
-										<div class="service-txt">
-											<h2>
-												<a href="#">Match de compradores</a>
-											</h2>
-											<p>
-												Encontramos compradores para dividirem a casa em cotas que cabem no seu bolso.
-											</p>
-										</div><!--/.service-txt-->
-									</div><!--/.service-single-->
-								</div><!--/.col-->
-								<div class="col-sm-4 col-xs-12">
-									<div class="service-single text-center">
-										<div class="service-img">
-											<img src="{% static 'core/images/service/service2.png' %}" alt="image of service" />
-										</div><!--/.service-img-->
-										<div class="service-txt">
-											<h2>
-												<a href="#">Trilha do Sucesso</a>
-											</h2>
-											<p>
-												Cuidamos de todos os passos, desde a compra até a decoração do imóvel, para que você só precise aproveitar.
-											</p>
-										</div><!--/.service-txt-->
-									</div><!--/.service-single-->
-								</div><!--/.col-->
-								<div class="col-sm-4 col-xs-12">
-									<div class="service-single text-center">
-										<div class="service-img">
-											<img src="{% static 'core/images/service/service3.png' %}" alt="image of service" />
-										</div><!--/.service-img-->
-										<div class="service-txt">
-											<h2>
-												<a href="#">Valorização no dia 1</a>
-											</h2>
-											<p>
-												Nossos profissionais cuidam do seu imóvel para conseguir a maior valorização possível do mercado. Revender nunca foi tão fácil.
-											</p>
-										</div><!--/.service-txt-->
-									</div><!--/.service-single-->
-								</div><!--/.col-->
-							</div><!--/.row-->
-						</div><!--/.service-content-one-->
-						<div class="service-content-two">
-							<div class="row">
-								<div class="col-sm-4 col-xs-12">
-									<div class="service-single text-center">
-										<div class="service-img">
-											<img src="{% static 'core/images/service/service4.png' %}" alt="image of service" />
-										</div><!--/.service-img-->
-										<div class="service-txt">
-											<h2>
-												<a href="#">Gestão Premium</a>
-											</h2>
-											<p>
-												Pague o seu imóvel em até 10 anos com juros extremamente competitivos. Isso só é possível devido a nossa expertise no mercado e a tecnologia por trás da plataforma.
-											</p>
-										</div><!--/.service-txt-->
-									</div><!--/.service-single-->
-								</div><!--/.col-->
-								<div class="col-sm-4 col-xs-12">
-									<div class="service-single text-center">
-										<div class="service-img">
-											<img src="{% static 'core/images/service/service5.png' %}" alt="image of service" />
-										</div><!--/.service-img-->
-										<div class="service-txt">
-											<h2>
-												<a href="#">Comunidade de Cotas</a>
-											</h2>
-											<p>
-												Compartilhe sua cota nos momentos que não for utilizar o imóvel com outros clientes e aproveite novos imóveis nas suas próximas férias.
-											</p>
-										</div><!--/.service-txt-->
-									</div><!--/.service-single-->
-								</div><!--/.col-->
-								<div class="col-sm-4 col-xs-12">
-									<div class="service-single text-center">
-										<div class="service-img">
-											<img src="{% static 'core/images/service/service6.png' %}" alt="image of service" />
-										</div><!--/.service-img-->
-										<div class="service-txt">
-											<h2>
-												<a href="#">Suporte 24/7</a>
-											</h2>
-											<p>
-												Se preocupe apenas em desfrutar sua casa. Nossa equipe está preparada para resolver qualquer imprevisto para você.
-											</p>
-										</div><!--/.service-txt-->
-									</div><!--/.service-single-->
-								</div><!--/.col-->
-							</div><!--/.row-->
-						</div><!--/.service-content-two-->
-					</div><!--/.service-details-->
-				</div><!--/.container-->
-
+			<div class="anchor-container"><span id="service-anchor" class="section-anchor"></span></div>
+			<div class="container">
+				<div class="service-details">
+					<div class="section-header text-center">
+						<h2>Nossos Serviços</h2>
+						<p>
+							Descubra como podemos te ajudar a ter sua casa dos sonhos
+						</p>
+					</div><!--/.section-header-->
+					<div class="service-content-one">
+						<div class="row">
+							<div class="col-sm-4 col-xs-12">
+								<div class="service-single text-center">
+									<div class="service-img">
+										<img src="{% static 'core/images/service/service1.png' %}" alt="image of service" />
+									</div><!--/.service-img-->
+									<div class="service-txt">
+										<h2>
+											<a href="#">Match de compradores</a>
+										</h2>
+										<p>
+											Encontramos compradores para dividirem a casa em cotas que cabem no seu bolso.
+										</p>
+									</div><!--/.service-txt-->
+								</div><!--/.service-single-->
+							</div><!--/.col-->
+							<div class="col-sm-4 col-xs-12">
+								<div class="service-single text-center">
+									<div class="service-img">
+										<img src="{% static 'core/images/service/service2.png' %}" alt="image of service" />
+									</div><!--/.service-img-->
+									<div class="service-txt">
+										<h2>
+											<a href="#">Trilha do Sucesso</a>
+										</h2>
+										<p>
+											Cuidamos de todos os passos, desde a compra até a decoração do imóvel, para que você só precise aproveitar.
+										</p>
+									</div><!--/.service-txt-->
+								</div><!--/.service-single-->
+							</div><!--/.col-->
+							<div class="col-sm-4 col-xs-12">
+								<div class="service-single text-center">
+									<div class="service-img">
+										<img src="{% static 'core/images/service/service3.png' %}" alt="image of service" />
+									</div><!--/.service-img-->
+									<div class="service-txt">
+										<h2>
+											<a href="#">Valorização no dia 1</a>
+										</h2>
+										<p>
+											Nossos profissionais cuidam do seu imóvel para conseguir a maior valorização possível do mercado. Revender nunca foi tão fácil.
+										</p>
+									</div><!--/.service-txt-->
+								</div><!--/.service-single-->
+							</div><!--/.col-->
+						</div><!--/.row-->
+					</div><!--/.service-content-one-->
+					<div class="service-content-two">
+						<div class="row">
+							<div class="col-sm-4 col-xs-12">
+								<div class="service-single text-center">
+									<div class="service-img">
+										<img src="{% static 'core/images/service/service4.png' %}" alt="image of service" />
+									</div><!--/.service-img-->
+									<div class="service-txt">
+										<h2>
+											<a href="#">Gestão Premium</a>
+										</h2>
+										<p>
+											Pague o seu imóvel em até 10 anos com juros extremamente competitivos. Isso só é possível devido a nossa expertise no mercado e a tecnologia por trás da plataforma.
+										</p>
+									</div><!--/.service-txt-->
+								</div><!--/.service-single-->
+							</div><!--/.col-->
+							<div class="col-sm-4 col-xs-12">
+								<div class="service-single text-center">
+									<div class="service-img">
+										<img src="{% static 'core/images/service/service5.png' %}" alt="image of service" />
+									</div><!--/.service-img-->
+									<div class="service-txt">
+										<h2>
+											<a href="#">Comunidade de Cotas</a>
+										</h2>
+										<p>
+											Compartilhe sua cota nos momentos que não for utilizar o imóvel com outros clientes e aproveite novos imóveis nas suas próximas férias.
+										</p>
+									</div><!--/.service-txt-->
+								</div><!--/.service-single-->
+							</div><!--/.col-->
+							<div class="col-sm-4 col-xs-12">
+								<div class="service-single text-center">
+									<div class="service-img">
+										<img src="{% static 'core/images/service/service6.png' %}" alt="image of service" />
+									</div><!--/.service-img-->
+									<div class="service-txt">
+										<h2>
+											<a href="#">Suporte 24/7</a>
+										</h2>
+										<p>
+											Se preocupe apenas em desfrutar sua casa. Nossa equipe está preparada para resolver qualquer imprevisto para você.
+										</p>
+									</div><!--/.service-txt-->
+								</div><!--/.service-single-->
+							</div><!--/.col-->
+						</div><!--/.row-->
+					</div><!--/.service-content-two-->
+				</div><!--/.service-details-->
+			</div><!--/.container-->
 		</section><!--/.service-->
 		<!--service end-->
 
 		<!--project start-->
-		<section id="main-form"  class="main-form">
+		<section id="main-form-section">
+			<div class="anchor-container"><span id="form-anchor" class="section-anchor"></span></div>
 			<div class="container">
 				<div class="row">
 					<h2>Faça um Orçamento Instantâneo</h2>
 					<div class="contact-form">
 						<p>Cole o link do anúncio e vamos fazer um orçamento de 1 cota com base no nosso histórico para a região e perfil do imóvel.
 						Nossa plataforma irá buscar por outros compradores e te retorna assim que for possível fazer a compra.</p>							
-						<form>
+						<form id="main-form">
+							{% csrf_token %}
 							<div class="row">
 								<div class="col-sm-6 col-xs-12">
 									<div class="form-group">
-										<input type="text" class="form-control" id="name" placeholder="Nome Completo" name="name">
+										<input type="text" class="form-control" id="id_full_name" placeholder="Nome Completo" name="full_name" required>
 									</div><!--/.form-group-->
 								</div><!--/.col-->
 								<div class="col-sm-6 col-xs-12">
 									<div class="form-group">
-										<input type="email" class="form-control" id="email" placeholder="E-mail" name="email">
+										<input type="email" class="form-control" id="id_email" placeholder="E-mail" name="email" required>
 									</div><!--/.form-group-->
 								</div><!--/.col-->
 							</div><!--/.row-->
 							<div class="row">
 								<div class="col-sm-9">
 									<div class="form-group">
-										<input type="text" class="form-control" id="url" placeholder="Link do Zap Imóveis" name="url">
+										<input type="url" class="form-control" id="id_url" placeholder="Link do Zap Imóveis" name="url" required>
 									</div><!--/.form-group-->
 								</div><!--/.col-->
 								<div class="col-sm-3">
 									<div class="single-estimate-btn">
-										<button class="contact-btn" type="button">Orçar</button>
+										<button type="submit" class="contact-btn" type="button">Orçar</button>
 									</div><!--/.single-single-estimate-btn-->
 								</div><!--/.col-->
 							</div><!--/.row-->
 						</form><!--/form-->
 					</div><!--/.contact-form-->	
 				</div>
-				<div class="row">
-					<div class="estimate">
-						<h3>Estamos quase lá!</h3>
-						<p class="disclaimer">Este orçamento é apenas uma estimativa baseada no nosso histórico. Já estamos trabalhando para encontrar mais interessados pelo imóvel e assim que forem fechadas todas as cotas você receberá uma proposta no seu email.</p>
-						
-						<div class="estimate-values">
-							<p><b>Valor do Imóvel:</b> R$ 100.000</p>
-							<p><b>Condomínio:</b> R$ 100.000</p>
-							<p><b>IPTU:</b> R$ 100.000</p>
-						</div>
-						<p class="savings"><b>Você economiza 80%</b></p>
-						<h4>Agora é só aguardar nosso contato!</h4>
+				<div id="loading" class="row">
+					<i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>
+				</div>
+				<div id="estimate-error" class="row">
+					<h4>Não foi possível obter as informações do anúncio :(</h4>
+				</div>
+				<div id="estimate" class="row">
+					<h3>Estamos quase lá!</h3>
+					<p class="disclaimer">Este orçamento é apenas uma estimativa baseada no nosso histórico. Já estamos trabalhando para encontrar mais interessados pelo imóvel e assim que forem fechadas todas as cotas você receberá uma proposta no seu email.</p>
+					
+					<div class="estimate-values">
+						<p id='price-line'><b>Valor do Imóvel:</b> <span id='price'></span></p>
+						<p id='condominium-line'><b>Condomínio:</b> <span id='condominium'></span></p>
+						<p id='iptu-line'><b>IPTU:</b> <span id='iptu'></span></p>
 					</div>
+					<p id='savings-line' class="savings"><b>Você economiza <span id='savings'></span>%</b></p>
+					<h4>Agora é só aguardar nosso contato!</h4>
 				</div>			
 			</div><!--/.container-->
 
@@ -755,6 +651,7 @@
 
 		<!--contact start-->
 		<section  class="contact">
+			<div class="anchor-container"><span id="contact-anchor" class="section-anchor"></span></div>
 			<div class="container">
 				<div class="contact-details">
 					<div class="section-header contact-head  text-center">
@@ -908,52 +805,14 @@
 								</div><!--/.hm-foot-icon-->
 							</div><!--/.hm-footer-widget-->
 						</div><!--/.col-->
-						<div class=" col-md-2 col-sm-6 col-xs-12">
+						<div class=" col-md-4 col-xs-12">
 							<div class="hm-footer-widget">
 								<div class="hm-foot-title">
-									<h4>Links</h4>
-								</div><!--/.hm-foot-title-->
-								<div class="footer-menu ">	  
-									<ul class="">
-										<li><a href="index.html" >Home</a></li>
-										<li><a href="about.html">Sobre</a></li>
-										<li><a href="services.html">Serviços</a></li>
-										<li><a href="portfolio.html">Portfolio</a></li>
-										<li><a href="contact.html">Contato</a></li> 
-									</ul>
-								</div><!-- /.footer-menu-->
-							</div><!--/.hm-footer-widget-->
-						</div><!--/.col-->
-						<div class=" col-md-3 col-sm-6 col-xs-12">
-							<div class="hm-footer-widget">
-								<div class="hm-foot-title">
-									<h4>from the news</h4>
-								</div><!--/.hm-foot-title-->
-								<div class="hm-para-news">
-									<a href="blog_single.html">
-										The Pros and Cons of Starting an Online Business.
-									</a>
-									<span>12th June 2017</span>
-								</div><!--/.hm-para-news-->
-								<div class="footer-line">
-									<div class="border-bottom"></div>
-								</div>
-								<div class="hm-para-news">
-									<a href="blog_single.html">
-										The Pros and Cons of Starting an Online Business.
-									</a>
-									<span>12th June 2017</span>
-								</div><!--/.hm-para-news-->
-							</div><!--/.hm-footer-widget-->
-						</div><!--/.col-->
-						<div class=" col-md-3 col-sm-6  col-xs-12">
-							<div class="hm-footer-widget">
-								<div class="hm-foot-title">
-									<h4> Our Newsletter</h4>
+									<h4> Nossa Newsletter</h4>
 								</div><!--/.hm-foot-title-->
 								<div class="hm-foot-para">
 									<p class="para-news">
-										Subscribe to our newsletter to get the latest News and offers..
+										Inscreva-se na nossa newsletter..
 									</p>
 								</div><!--/.hm-foot-para-->
 								<div class="hm-foot-email">
@@ -980,8 +839,7 @@
 					<div class="col-sm-7">
 						<div class="foot-copyright pull-left">
 							<p>
-								&copy; All Rights Reserved. Designed and Developed by
-							 	<a href="https://www.themesine.com">ThemeSINE</a>
+								&copy; ZomBiz 2022
 							</p>
 						</div><!--/.foot-copyright-->
 					</div><!--/.col-->
@@ -1040,6 +898,9 @@
         <script type="text/javascript" src="{% static 'core/js/jak-menusearch.js' %}"></script>
         <script type="text/javascript" src="{% static 'core/js/custom.js' %}"></script>
 		
+		<!-- Form Submit -->
+		<script type="text/javascript" src="{% static 'core/js/form-submit.js' %}"></script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
 
     </body>
 	

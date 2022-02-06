@@ -4,11 +4,9 @@ from locale import currency
 from urllib.request import Request, urlopen
 
 from bs4 import BeautifulSoup
+from django.conf import settings
 
 from utils import get_money_dict
-
-# Default user agent, unless instructed by the user to change it.
-USER_AGENT = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36'
 
 
 class ZapCrawler:
@@ -29,7 +27,7 @@ class ZapCrawler:
 
     def _get_page(self):
         request = Request(self.url)
-        request.add_header('User-Agent', USER_AGENT)
+        request.add_header('User-Agent', settings.CRAWLER_USER_AGENT)
         response = urlopen(request)
         return response
 
@@ -40,18 +38,18 @@ class ZapCrawler:
                 if 'R$' in desc:
                     return get_money_dict(desc.strip())
         except Exception:
-            return None
+            return {}
 
     def _get_condominium(self):
         try:
             condominium = self.soup.find('li', 'condominium').find('span', 'price__value').string
             return get_money_dict(condominium)
         except Exception:
-            return None
+            return {}
 
     def _get_iptu(self):
         try:
             iptu = self.soup.find('li', 'iptu').find('span', 'price__value').string
             return get_money_dict(iptu)
         except Exception:
-            return None
+            return {}
