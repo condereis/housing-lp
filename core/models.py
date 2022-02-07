@@ -22,9 +22,9 @@ class EstimateRequest(TimeStampedModel):
     email = models.EmailField()
     url = models.URLField()
 
-    price = models.PositiveSmallIntegerField(null=True, blank=True)
-    condominium = models.PositiveSmallIntegerField(null=True, blank=True)
-    iptu = models.PositiveSmallIntegerField(null=True, blank=True)
+    price = models.PositiveIntegerField(null=True, blank=True)
+    condominium = models.PositiveIntegerField(null=True, blank=True)
+    iptu = models.PositiveIntegerField(null=True, blank=True)
     currency = models.CharField(max_length=5, null=True, blank=True)
 
     def __str__(self):
