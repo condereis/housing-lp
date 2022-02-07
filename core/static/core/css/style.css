@@ -1224,6 +1224,9 @@ a:focus.service-btn{
 .hm-foot-title .logo{
 	margin-bottom: 32px;
 }
+.hm-foot-title .logo img{
+	width: 200px;
+}
 .hm-foot-para p{
 	color:#aaa;
 	font-size:16px;
