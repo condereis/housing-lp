@@ -506,14 +506,19 @@
 						<form id="main-form">
 							{% csrf_token %}
 							<div class="row">
-								<div class="col-sm-6 col-xs-12">
+								<div class="col-sm-5 col-xs-12">
 									<div class="form-group">
 										<input type="text" class="form-control" id="id_full_name" placeholder="Nome Completo" name="full_name" required>
 									</div><!--/.form-group-->
 								</div><!--/.col-->
-								<div class="col-sm-6 col-xs-12">
+								<div class="col-sm-4 col-xs-12">
 									<div class="form-group">
 										<input type="email" class="form-control" id="id_email" placeholder="E-mail" name="email" required>
+									</div><!--/.form-group-->
+								</div><!--/.col-->
+								<div class="col-sm-3 col-xs-12">
+									<div class="form-group">
+										<input type="text" class="form-control" id="id_phone" placeholder="Telefone" name="phone" class="masked" required>
 									</div><!--/.form-group-->
 								</div><!--/.col-->
 							</div><!--/.row-->
@@ -898,8 +903,9 @@
         <script type="text/javascript" src="{% static 'core/js/jak-menusearch.js' %}"></script>
         <script type="text/javascript" src="{% static 'core/js/custom.js' %}"></script>
 		
-		<!-- Form Submit -->
+		<!-- Form -->
 		<script type="text/javascript" src="{% static 'core/js/form-submit.js' %}"></script>
+		<script type="text/javascript" src="{% static 'core/js/jquery.inputmask.min.js' %}"></script>
 		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
 
     </body>

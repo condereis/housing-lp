@@ -2,6 +2,11 @@ $(document).ready(function(){
 	"use strict";
 
     $("#main-form").validate();
+
+    $(":input").inputmask();
+    console.log('inputmask')
+
+    $("#id_phone").inputmask({"mask": ["(99) 9{4}-9{4}", "(99) 9{5}-9{4}"]});
    
     $(document).on('submit','#main-form',function(e){
         e.preventDefault();
@@ -15,6 +20,7 @@ $(document).ready(function(){
                 full_name:$('#id_full_name').val(),
                 email:$('#id_email').val(),
                 url:$('#id_url').val(),
+                phone:$('#id_phone').val(),
 
                 csrfmiddlewaretoken:$('input[name=csrfmiddlewaretoken]').val()
             },
@@ -69,8 +75,13 @@ $(document).ready(function(){
         return this.optional(element) || /^https:\/\/(.*)zapimoveis.com.br/.test(value);
     }, "Apenas URLs do Zap Imoveis são permitidas.");
     
+    jQuery.validator.addMethod("phone", function(value, element) {
+        return this.optional(element) || /^\(?(?:[14689][1-9]|2[12478]|3[1234578]|5[1345]|7[134579])\)? ?(?:[2-8]|9[1-9])[0-9]{3}\-?[0-9]{4}$/.test(value);
+    }, "Telefone inválido.");
+    
     $( "#id_full_name" ).rules( "add", "fullName");
     $( "#id_url" ).rules( "add", "zapUrl");
+    $( "#id_phone" ).rules( "add", "phone");
 
     jQuery.extend(jQuery.validator.messages, {
         required: "Este campo &eacute; obrigatório.",
